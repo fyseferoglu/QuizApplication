@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85bdbf"
+    android:orientation="vertical"
+    tools:context="com.fyusuf.quizapplication.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@color/colotText"
+        android:textSize="48sp"
+        android:id="@+id/welcome" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRAINING"
+        android:textSize="20dp"
+        android:id="@+id/button2"
+        android:layout_weight="1"
+        android:background="#255c99"
+        android:layout_marginTop="20dp"
+        android:onClick="training"
+        android:textColor="@color/colotText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW WORD"
+        android:textSize="20dp"
+        android:id="@+id/button3"
+        android:background="#406e8e"
+        android:layout_weight="1"
+        android:onClick="add"
+        android:textColor="@color/colotText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUIZ"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:id="@+id/button4"
+        android:background="#427aa1"
+        android:onClick="quiz"
+        android:textColor="@color/colotText"/>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#85bdbf"
+    tools:context="com.fyusuf.quizapplication.QuizActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Point"
+        android:textSize="36dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#255c99"
+        android:textColor="@color/colotText"
+        android:id="@+id/pointView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Word"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#406e8e"
+        android:textColor="@color/colotText"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/currentWord" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#255c99"
+        android:dividerHeight="4px"
+        android:id="@+id/listView" />
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to finish the quiz"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:onClick="finishQuiz"
+        android:background="#255c99"
+        android:textColor="@color/colotText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your point is less than 0.It is recommended to start again the training part."
+        android:visibility="invisible"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colotText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/recommend" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:background="#255c99"
+        android:text="CLICK TO GO TRAINING"
+        android:id="@+id/btnTraining"
+        android:textColor="@color/colotText"
+        android:onClick="goTraining"/>
+
+
+
+</LinearLayout>
